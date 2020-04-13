@@ -1,0 +1,16 @@
+version: "3"
+services:
+
+  wiki:
+    image: requarks/wiki:2
+    environment:
+      DB_TYPE: mariadb
+      DB_HOST: 10.19.94.147
+      DB_PORT: 7000
+      DB_USER: TE9MIGNyZWRzIGluIGdpdGh1Yg==
+      DB_PASS: TE9MIGNyZWRzIGluIGdpdGh1Yg==
+      DB_NAME: TE9MIG5vdCBldmVuIGEgZGIgbmFtZQ==
+    restart: unless-stopped
+    ports:
+      - "8001:3000"
+      - "8000:3443"
