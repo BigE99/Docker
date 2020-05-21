@@ -1,6 +1,0 @@
-web:
-  image: nginx
-  volumes:
-   - ./site:/usr/share/nginx/html
-  ports:
-   - "8002:80"

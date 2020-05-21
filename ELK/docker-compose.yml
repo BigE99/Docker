@@ -1,9 +1,0 @@
-elk:
-  image: 'sebp/elk:latest'
-  restart: always
-  hostname: 'elk'
-  ports:
-    - '7002:5601'
-    - '7003:9200'
-    - '7004:5044'
-
