@@ -1,0 +1,18 @@
+version: '2'
+
+volumes:
+  nextcloud:
+
+services:
+    app:
+        image: nextcloud
+        ports:
+          - 8080:80
+        environment:
+          POSTGRES_DB=
+          POSTGRES_USER=
+          POSTGRES_PASSWORD=
+          POSTGRES_HOST=
+        volumes:
+          - nextcloud:/var/www/html
+        restart: always
